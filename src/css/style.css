@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.calculator {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator .phone-calc {
+  width: 375px;
+  height: 821px;
+  border-radius: 44px;
+  overflow: hidden;
+  background-color: #17171c;
+}
+
+.calculator .phone-calc .header-phone {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+.calculator .phone-calc .header-phone__time {
+  width: 54px;
+  height: 20px;
+  text-align: center;
+  margin: 18px 0 0 19px;
+}
+
+.calculator .phone-calc .header-phone__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+}
+
+.calculator .phone-calc .header-phone__bang {
+  position: relative;
+}
+
+.calculator .phone-calc .header-phone__bang::after {
+  content: "";
+  top: -9px;
+  left: 25px;
+  position: absolute;
+  width: 164px;
+  height: 34px;
+  border-radius: 15px;
+  background-color: #000000;
+}
+
+.calculator .phone-calc .header-phone__signal {
+  position: relative;
+}
+
+.calculator .phone-calc .header-phone__signal::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 205px;
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/mobile-signal.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator .phone-calc .header-phone__wifi {
+  position: relative;
+}
+
+.calculator .phone-calc .header-phone__wifi::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/Wifi.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator .phone-calc .header-phone__battery {
+  position: relative;
+}
+
+.calculator .phone-calc .header-phone__battery::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 255px;
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator .phone-calc .screen-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator .phone-calc .screen-phone__top {
+  width: 335px;
+  height: 47px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  opacity: 0.9;
+  color: #4e505f;
+}
+
+.calculator .phone-calc .screen-phone__bottom {
+  width: 335px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 96px;
+  color: #ffffff;
+}
+
+.calculator .phone-calc .buttons-phone {
+  margin-top: 40px;
+  margin-left: 19px;
+}
+
+.calculator .phone-calc .buttons-phone__wrap {
+  display: flex;
+  width: 100%;
+}
+
+.calculator .phone-calc .buttons-phone .btn-phone {
+  width: 72px;
+  height: 72px;
+  margin: 0 16px 16px 0;
+  line-height: 72px;
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+  background-color: #2e2f38;
+}
+
+.calculator .phone-calc .buttons-phone .btn-phone:hover {
+  background-color: #c86e00;
+}
+
+.calculator .phone-calc .buttons-phone .btn-phone:active {
+  background-color: #2e2f38;
+}
+
+.calculator .phone-calc .buttons-phone .bg-gray {
+  background-color: #4E505F;
+}
+
+.calculator .phone-calc .buttons-phone .bg-blue {
+  background-color: #4B5EFC;
+}
+
+.calculator .phone-calc__footer {
+  position: relative;
+}
+
+.calculator .phone-calc__footer::after {
+  content: "";
+  top: 50px;
+  left: 127px;
+  position: absolute;
+  width: 130px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,197 @@
+@import "reset-styles";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+.calculator {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .phone-calc {
+        width: 375px;
+        height: 821px;
+        border-radius: 44px;
+        overflow: hidden;
+        background-color: #17171c;
+
+        .header-phone {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 70px;
+
+            &__time {
+                width: 54px;
+                height: 20px;
+                text-align: center;
+                margin: 18px 0 0 19px;
+            }
+
+            &__text {
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 20px;
+                color: #fff;
+            }
+
+            &__bang {
+                position: relative;
+                // background-color: #FFF;
+
+                &::after {
+                    content: "";
+                    top: -9px;
+                    left: 25px;
+                    position: absolute;
+                    width: 164px;
+                    height: 34px;
+                    border-radius: 15px;
+                    background-color: #000000;
+                }
+            }
+
+            &__signal {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    left: 205px;
+                    width: 20px;
+                    height: 15px;
+
+                    background-image: url(../img/mobile-signal.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &__wifi {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    left: 230px;
+                    width: 20px;
+                    height: 15px;
+
+                    background-image: url(../img/Wifi.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &__battery {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    left: 255px;
+                    width: 20px;
+                    height: 15px;
+
+                    background-image: url(../img/Rectangle.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+
+        .screen-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__top {
+                width: 335px;
+                height: 47px;
+                margin-bottom: 10px;
+                text-align: right;
+                font-family: "Work Sans", sans-serif;
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 47px;
+                opacity: 0.9;
+                color: #4e505f;
+            }
+
+            &__bottom {
+                width: 335px;
+                height: 96px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Work Sans", sans-serif;
+                font-weight: 300;
+                font-size: 96px;
+                line-height: 96px;
+                color: #ffffff;
+            }
+        }
+
+        .buttons-phone {
+            margin-top: 40px;
+            margin-left: 19px;
+
+            &__wrap {
+                display: flex;
+                width: 100%;
+            }
+
+            .btn-phone {
+                width: 72px;
+                height: 72px;
+                margin: 0 16px 16px 0;
+                line-height: 72px;
+                border-radius: 24px;
+                text-align: center;
+                font-family: "Work Sans", sans-serif;
+                font-weight: 400;
+                font-size: 32px;
+                cursor: pointer;
+                user-select: none;
+                color: #fff;
+                background-color: #2e2f38;
+
+                &:hover{
+                    background-color: orange - 55%;
+                }
+
+                &:active{
+                    background-color: #2e2f38;
+                }
+            }
+
+            .bg-gray{
+                background-color: #4E505F;
+            }
+
+            .bg-blue{
+                background-color: #4B5EFC;
+            }
+        }
+
+        &__footer{
+            position: relative;
+           
+            &::after{
+                content: "";
+                top: 50px;
+                left: 127px;
+                position: absolute;
+                width: 130px;
+                height: 3px;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+        }
+    }
+}
