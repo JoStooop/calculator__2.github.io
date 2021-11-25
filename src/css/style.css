@@ -185,6 +185,7 @@ button {
   font-size: 32px;
   cursor: pointer;
   user-select: none;
+  transition-duration: .4s;
   color: #fff;
   background-color: #2e2f38;
 }
