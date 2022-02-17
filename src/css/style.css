@@ -155,7 +155,7 @@ button {
   height: 96px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 96px;
@@ -173,6 +173,7 @@ button {
   width: 100%;
 }
 
+.calculator .phone-calc .buttons-phone .btn-operation,
 .calculator .phone-calc .buttons-phone .btn-phone {
   width: 72px;
   height: 72px;
@@ -190,10 +191,12 @@ button {
   background-color: #2e2f38;
 }
 
+.calculator .phone-calc .buttons-phone .btn-operation:hover,
 .calculator .phone-calc .buttons-phone .btn-phone:hover {
   background-color: #c86e00;
 }
 
+.calculator .phone-calc .buttons-phone .btn-operation:active,
 .calculator .phone-calc .buttons-phone .btn-phone:active {
   background-color: #2e2f38;
 }

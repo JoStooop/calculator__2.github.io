@@ -128,7 +128,7 @@
                 height: 96px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: right;
                 font-family: "Work Sans", sans-serif;
                 font-weight: 300;
                 font-size: 96px;
@@ -145,7 +145,8 @@
                 display: flex;
                 width: 100%;
             }
-
+            
+            .btn-operation,
             .btn-phone {
                 width: 72px;
                 height: 72px;
