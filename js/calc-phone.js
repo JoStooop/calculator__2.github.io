@@ -30,7 +30,7 @@ function checkFontSize() {
         screen.style.fontSize = "60px"
     }
     if(screen.textContent.length === 10){
-        screen.textContent.length = 10 
+       
     }
 }
 
