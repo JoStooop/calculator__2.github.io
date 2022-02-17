@@ -21,16 +21,12 @@ function checkFontSize() {
     const screen = UI_ELEMENTS['CALC_BOTTOM_RESULT']
     const lengthCheckOne = screen.textContent.length >= 6
     const lengthCheckTwo = screen.textContent.length >= 8
-    // const lengthCheckThree = screen.textContent.length
 
     if (lengthCheckOne) {
         screen.style.fontSize = "70px"
     }
     if (lengthCheckTwo) {
         screen.style.fontSize = "60px"
-    }
-    if(screen.textContent.length === 10){
-       
     }
 }
 
