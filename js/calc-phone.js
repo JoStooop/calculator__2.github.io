@@ -29,9 +29,9 @@ function checkFontSize() {
     if (lengthCheckTwo) {
         screen.style.fontSize = "60px"
     }
-    // if(screen.textContent.length === 10){
-         
-    // }
+    if(screen.textContent.length === 10){
+        screen.textContent.length = 10 
+    }
 }
 
 BTN_OPERATION['ERASE'].addEventListener('click', () => {
