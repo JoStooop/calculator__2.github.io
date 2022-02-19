@@ -1,21 +1,8 @@
+import {BTN_OPERATION, UI_ELEMENTS} from './view'
+
 let numberOne = null
 let numberTwo = null
 let operation = null
-
-const BTN_OPERATION = {
-    OPERANDS: document.querySelectorAll('.btn-operation'),
-    CLEAR: document.querySelector('.buttons-phone__ac'),
-    ERASE: document.querySelector('.buttons-phone__erase'),
-    DOT: document.querySelector('.buttons-phone__dot'),
-};
-
-const UI_ELEMENTS = {
-    CALC_TOP_RESULT: document.querySelector('.screen-phone__top-result'),
-    CALC_BOTTOM_RESULT: document.querySelector('.screen-phone__bottom-result'),
-    CALC_BTNS: document.querySelectorAll('.btn-phone')
-};
-
-
 
 function checkFontSize() {
     const screen = UI_ELEMENTS['CALC_BOTTOM_RESULT']
