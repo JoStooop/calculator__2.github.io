@@ -1,4 +1,4 @@
-import {BTN_OPERATION, UI_ELEMENTS} from './view'
+import {BTN_OPERATION, UI_ELEMENTS} from './view.js'
 
 let numberOne = null
 let numberTwo = null
